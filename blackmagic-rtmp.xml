@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<streaming>
+    <service>
+        <name>Local OBS</name>
+        <servers>
+            <server>
+                <name>Default</name>
+                <url>rtmp://192.168.1.120:1935/stream</url>
+            </server>
+        </servers>
+        <profiles>
+            <profile>
+                <name>Streaming High</name>
+                <config resolution="HD">
+                    <bitrate>9000000</bitrate>
+                    <audio-bitrate>128000</audio-bitrate>
+                    <keyframe-interval>2</keyframe-interval>
+                </config>
+            </profile>
+        </profiles>
+    </service>
+</streaming>
